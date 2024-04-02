@@ -1,0 +1,47 @@
+.selected-book-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: darkslategrey;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  .selected-book-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .selected-book-container .info-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: darkgray;
+  }
+  
+  
+  .selected-book-container .info-container {
+    margin-top: 20px;
+  }
+  
+  .selected-book-container .info-container p {
+    margin-bottom: 8px;
+  }
+  
+  .selected-book-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:whitesmoke;
+    color:black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+    margin-right: 440px;
+  }
+  
+ 
