@@ -3,6 +3,8 @@ import Book from "../components/Book";
 import './AllTheBooks.css';
 function AllTheBooks(){
     const [allBooks, setBooks]= useState([]);
+
+    const [showBookContainer, setShowBookContainer] = useState(false);
     useEffect(()=>{
         async function getBooks(){
             const response= await fetch('https://my-json-server.typicode.com/zocom-christoffer-wallenberg/books-api/books')
@@ -22,7 +24,7 @@ return (
     <ul className="book-list">
                 {allBooks.map((book) => (
                     <li className="book-item" key={book.id}>
-                        <Book book={book} />
+                        <Book book={book} setShowBookContainer={setShowBookContainer} />
                     </li>
                 ))}
             </ul>
