@@ -1,6 +1,10 @@
 import {useEffect, useState} from "react";
 import Book from "../components/Book";
 import './AllTheBooks.css';
+
+
+
+
 function AllTheBooks(){
     const [allBooks, setBooks]= useState([]);
 
@@ -25,8 +29,10 @@ return (
                 {allBooks.map((book) => (
                     <li className="book-item" key={book.id}>
                         <Book book={book} setShowBookContainer={setShowBookContainer} />
+                 
                     </li>
                 ))}
+                
             </ul>
     </section>
     
